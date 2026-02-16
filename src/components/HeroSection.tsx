@@ -110,8 +110,11 @@ const HeroSection = () => {
               size="lg"
               variant="outline"
               className="font-heading font-semibold text-base px-8 border-border hover:border-primary/50"
+              asChild
             >
-              <Download className="mr-2 h-4 w-4" /> Download Resume
+              <a href="https://drive.google.com/uc?export=download&id=16WIMbY1B09ChN1FMLS3KB9cg2oQZev8P" target="_blank" rel="noopener noreferrer">
+                <Download className="mr-2 h-4 w-4" /> Download Resume
+              </a>
             </Button>
           </div>
         </motion.div>
@@ -120,7 +123,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute bottom-12 left-1/2 -translate-x-1/2"
         >
           <ArrowDown className="h-5 w-5 text-muted-foreground animate-bounce" />
         </motion.div>

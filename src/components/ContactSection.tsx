@@ -99,8 +99,10 @@ const ContactSection = () => {
                   <span className="text-sm">{s.label}</span>
                 </a>
               ))}
-              <Button variant="outline" className="w-full mt-4 font-heading border-border hover:border-primary/50">
-                <Download className="mr-2 h-4 w-4" /> Download Resume
+              <Button variant="outline" className="w-full mt-4 font-heading border-border hover:border-primary/50" asChild>
+                <a href="https://drive.google.com/uc?export=download&id=16WIMbY1B09ChN1FMLS3KB9cg2oQZev8P" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" /> Download Resume
+                </a>
               </Button>
             </div>
           </div>
